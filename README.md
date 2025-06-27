@@ -1,224 +1,87 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Princy Soni - Portfolio</title>
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Font - Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Custom styles to enhance Tailwind */
-       body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f0f2f5; /* Light gray background */
-            color: #333;
-        }
-        .section-title {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 2rem;
-            font-size: 2.25rem; /* text-4xl */
-            font-weight: 700; /* font-bold */
-            color: #1a202c; /* text-gray-900 */
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -8px;
-            width: 60px;
-            height: 4px;
-            background-color: #6366f1; /* Indigo-500 */
-            border-radius: 9999px; /* rounded-full */
-        }
-        .card {
-            background-color: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 0.75rem; /* rounded-xl */
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            transition: transform 0.2s ease-in-out;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .btn-primary {
-            background-image: linear-gradient(to right, #6366f1, #8b5cf6); /* Indigo-500 to Violet-500 */
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem; /* rounded-lg */
-            font-weight: 600; /* font-semibold */
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .btn-primary:hover {
-            opacity: 0.9;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-        }
-        .skill-item {
-            background-color: #e0e7ff; /* Indigo-100 */
-            color: #312e81; /* Indigo-900 */
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            font-weight: 500;
-            margin: 0.5rem;
-        }
-    </style>
-</head>
-<body class="antialiased leading-normal tracking-wide text-gray-700">
-    <!-- Header / Hero Section -->
-    <header class="bg-gradient-to-r from-indigo-600 to-violet-600 text-white py-16 md:py-24 shadow-lg">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center text-center md:text-left">
-            <div class="md:w-1/3 mb-8 md:mb-0 md:mr-12 flex justify-center">
-                <img src="profile.jpg" alt="Princy Soni" class="rounded-full border-4 border-white shadow-xl w-48 h-48 object-cover">
-            </div>
-            <div class="md:w-2/3">
-                <h1 class="text-5xl md:text-6xl font-extrabold mb-4 animate-fade-in-down">
-                    Hi, I'm Princy Soni
-                </h1>
-                <p class="text-xl md:text-2xl font-light mb-6">
-                    A passionate Computer Applications Student looking for my first work experience.
-                </p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                    <a href="#contact" class="btn-primary flex items-center justify-center">
-                        <i class="fas fa-envelope mr-2"></i> Contact Me
-                    </a>
-                    <a href="Resume.pdf" download="Princy_Soni_Resume.pdf" class="btn-primary bg-white text-indigo-600 hover:text-indigo-800 hover:bg-gray-100 flex items-center justify-center">
-                        <i class="fas fa-download mr-2"></i> Download Resume
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="container mx-auto px-4 py-12 md:py-16">
-        <!-- About Me Section -->
-        <section id="about" class="mb-16">
-            <h2 class="section-title text-gray-900 mb-8">About Me</h2>
-            <div class="card p-6 md:p-8">
-                <p class="text-lg leading-relaxed mb-4">
-                    As a dedicated Computer Applications student, I am eager to apply my growing knowledge and skills in a professional setting. I consider myself a responsible and proactive individual, always looking for opportunities to learn and grow.
-                </p>
-                <p class="text-lg leading-relaxed">
-                    My objective is to contribute to an organization's goals while simultaneously enhancing my own abilities through hands-on experience and continuous learning. I am passionate about front-end development and programming.
-                </p>
-            </div>
-        </section>
-        <!-- Skills Section -->
-        <section id="skills" class="mb-16">
-            <h2 class="section-title text-gray-900 mb-8">Skills</h2>
-            <div class="card p-6 md:p-8">
-                <h3 class="text-2xl font-semibold mb-4 text-gray-800">Technical Skills:</h3>
-                <div class="flex flex-wrap">
-                    <span class="skill-item">Introduction To Python</span>
-                    <span class="skill-item">Front End Development - HTML</span>
-                    <span class="skill-item">Front End Development - CSS</span>
-                    <span class="skill-item">Training of C Programming</span>
-                </div>
-                <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-800">Languages:</h3>
-                <div class="flex flex-wrap">
-                    <span class="skill-item">Hindi</span>
-                    <span class="skill-item">English</span>
-                </div>
-            </div>
-        </section>
-        <!-- Education Section -->
-        <section id="education" class="mb-16">
-            <h2 class="section-title text-gray-900 mb-8">Education</h2>
-            <div class="card p-6 md:p-8">
-                <div class="mb-6">
-                    <h3 class="text-2xl font-semibold text-gray-800">Bachelor of Computer Applications (BCA)</h3>
-                    <p class="text-lg text-gray-600">GNIOT Institute Of Professional Studies</p>
-                    <p class="text-md text-gray-500">Pursuing 2nd Year (Aggregate: 80%)</p>
-                </div>
-                <div class="mb-4">
-                    <h3 class="text-xl font-semibold text-gray-800">12th Standard</h3>
-                    <p class="text-lg text-gray-600">CBSE Board</p>
-                    <p class="text-md text-gray-500">Passed out in 2023</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-800">10th Standard</h3>
-                    <p class="text-lg text-gray-600">CBSE Board</p>
-                    <p class="text-md text-gray-500">Passed out in 2021</p>
-                </div>
-            </div>
-        </section>
-        <!-- Projects Section -->
-        <section id="projects" class="mb-16">
-            <h2 class="section-title text-gray-900 mb-8">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Project 1: Personal Portfolio Website -->
-                <div class="card">
-                    <h3 class="text-2xl font-semibold mb-3 text-gray-800">Personal Portfolio Website (Internship Project)</h3>
-                    <p class="text-gray-600 mb-4">
-                        This project aims to develop a personal portfolio website to showcase skills, education, certifications, projects, and achievements. It includes a downloadable resume and is designed to be accessible across all devices.
-                    </p>
-                    <ul class="list-disc list-inside text-gray-600 mb-4">
-                        <li>About Me, Skills, Projects, and Contact sections</li>
-                        <li>Option to download Resume (PDF)</li>
-                        <li>Social media links integration</li>
-                        <li>Fully Responsive design for all devices</li>
-                        <li>Planned for hosting on GitHub Pages</li>
-                    </ul>
-                    <a href="#" class="btn-primary text-sm inline-flex items-center">
-                        <i class="fas fa-globe mr-2"></i> View Project (Coming Soon)
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Section -->
-        <section id="contact" class="mb-16">
-            <h2 class="section-title text-gray-900 mb-8">Contact Me</h2>
-            <div class="card p-6 md:p-8">
-                <p class="text-lg leading-relaxed mb-6">
-                    I'm currently looking for new opportunities and would love to connect. Feel free to reach out!
-                </p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-6 mb-8">
-                    <div class="flex items-center text-lg text-gray-800">
-                        <i class="fas fa-phone-alt text-indigo-500 mr-3 text-xl"></i>
-                        <span>+91 8595251529</span>
-                    </div>
-                    <div class="flex items-center text-lg text-gray-800">
-                        <i class="fas fa-envelope text-indigo-500 mr-3 text-xl"></i>
-                        <span>iprincysoni@gmail.com</span>
-                    </div>
-                    <div class="flex items-center text-lg text-gray-800">
-                        <i class="fas fa-map-marker-alt text-indigo-500 mr-3 text-xl"></i>
-                        <span>House no. 110, Surajpur, Greater Noida, 201306</span>
-                    </div>
-                </div>
-                <!-- Social Media Links -->
-                <div class="flex justify-center md:justify-start space-x-6">
-                    <a href="https://www.linkedin.com/in/princy-soni-6552a1332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-200 text-3xl">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/Princysoni276/Personal-Portfolio-" target="_blank" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-200 text-3xl">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.instagram.com/priya_i6388?igsh=d3oxMGgzaWYzMHJu" target="_blank" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-200 text-3xl">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 text-center">
-        <p>&copy; 2024 Princy Soni. All rights reserved.</p>
-        <p class="text-sm mt-2">Designed using Tailwind CSS.</p>
-    </footer>
-</body>
-</html>
-0 commit comments
-Comments
-0
- (0)
-Comment
-You're not receiving notifications from this thread.
+Princy Soni - Personal Portfolio Website
+🌟 Overview
+Welcome to my personal portfolio website! This project serves as a dynamic showcase of my skills, education, certifications, projects, and achievements. Developed as part of my internship, it's designed to provide a comprehensive overview of my capabilities as a passionate Computer Applications student eager to apply my growing knowledge in a professional setting.
 
-Add files via upload · Princysoni276/Personal-Portfolio-@cdeb382
+✨ Features
+This portfolio website is built with a focus on clarity, responsiveness, and easy navigation. Key features include:
+
+About Me Section: Get to know my professional aspirations and what drives me.
+
+Skills Section: A clear breakdown of my technical proficiencies (e.g., Python, HTML, CSS, C Programming) and languages.
+
+Education Section: Details of my academic journey, including my BCA studies and schooling.
+
+Projects Section: A dedicated space to highlight my work, starting with this portfolio website itself.
+
+Downloadable Resume: Convenient access to my resume in PDF format for easy review.
+
+Contact Information: Multiple ways to get in touch, including phone, email, and location.
+
+Social Media Integration: Links to my professional and relevant social profiles (LinkedIn, GitHub, Instagram).
+
+Fully Responsive Design: Optimized for seamless viewing across all devices – desktops, tablets, and mobile phones.
+
+Modern UI: Clean and attractive user interface thanks to Tailwind CSS.
+
+🚀 Technologies Used
+HTML5: For the core structure of the web pages.
+
+CSS3 (with Tailwind CSS): For styling and responsive design. Tailwind CSS is used via CDN for utility-first styling.
+
+JavaScript: (Future enhancements might include interactive elements, currently minimal.)
+
+Google Fonts (Inter): For a clean and modern typography.
+
+Font Awesome: For various icons used throughout the site.
+
+🛠️ Installation and Setup
+This website is a static site, making it incredibly easy to run locally or host.
+
+Clone the Repository:
+
+Bash
+
+git clone https://github.com/Princysoni276/Personal-Portfolio-.git
+Navigate to the Project Directory:
+
+Bash
+
+cd Personal-Portfolio-
+Open portfolio.html:
+Simply open the portfolio.html file in your preferred web browser. No local server is required as it uses CDN for Tailwind CSS and Font Awesome.
+
+📁 Project Structure
+.
+├── portfolio.html    // The main portfolio page
+├── profile.jpg       // Your profile picture
+└── Resume.pdf        // Your resume in PDF format
+└── README.md         // This file
+🎯 My Objective
+As a dedicated Computer Applications student, my objective is to contribute to an organization's goals while simultaneously enhancing my own abilities through hands-on experience and continuous learning. I am passionate about front-end development and programming and am actively looking for my first work experience.
+
+📞 Contact Me
+Feel free to reach out for collaborations, opportunities, or just a chat!
+
+Phone: +91 8595251529
+
+Email: iprincysoni@gmail.com
+
+Location: House no. 110, Surajpur, Greater Noida, 201306
+
+🔗 Connect With Me
+LinkedIn: Princy Soni
+
+GitHub: Princy Soni
+
+Instagram: priya_i6388
+
+📝 License
+This project is open source and available under the MIT License.
+
+🙏 Acknowledgements
+Tailwind CSS: For making responsive and modern web design incredibly efficient.
+
+Font Awesome: For providing a wide range of useful icons.
+
+Google Fonts: For the "Inter" typeface, enhancing readability.
