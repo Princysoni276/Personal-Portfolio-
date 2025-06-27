@@ -1,7 +1,5 @@
 # Personal-Portfolio-
-Understood! I've updated the README to reflect that your main portfolio file is named portfolio.html.
 
-Princy Soni - Personal Portfolio Website
 🌟 Overview
 Welcome to my personal portfolio website! This project serves as a dynamic showcase of my skills, education, certifications, projects, and achievements. Developed as part of my internship, it's designed to provide a comprehensive overview of my capabilities as a passionate Computer Applications student eager to apply my growing knowledge in a professional setting.
 
