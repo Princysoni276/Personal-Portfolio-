@@ -1,49 +1,4 @@
-Skip to content
-Navigation Menu
-Princysoni276
-Personal-Portfolio-
 
-Type / to search
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Commit cdeb382
-Princysoni276
-Princysoni276
-authored
-2 hours ago
-Verified
-Add files via upload
-portfolio file includes both html and css part.
-main
-1 parent 
-f8b4016
- commit 
-cdeb382
-File tree
-Filter files…
-Resume.pdf
-portfolio.html
-2 files changed
-+226
--0
-lines changed
-Search within code
- 
-‎Resume.pdf
-929 KB
-Binary file not shown.
-‎portfolio.html
-+226
-Lines changed: 226 additions & 0 deletions
-Original file line number	Diff line number	Diff line change
-@@ -0,0 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
